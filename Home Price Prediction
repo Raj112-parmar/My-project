@@ -1,0 +1,97 @@
+🏡 Home Price Prediction
+
+This project predicts house prices using machine learning models based on various features such as size, location, and building area. The goal is to develop a model that can accurately estimate home prices based on given parameters.
+
+
+---
+
+📌 Dataset
+
+The dataset contains real estate property details, including:
+
+Property location, type, and seller information
+
+Size-related features like land size and building area
+
+Categorical features such as council area and region name
+
+
+🛠️ Data Preprocessing
+
+Dropped unnecessary columns: ['Address', 'Date', 'Postcode', 'YearBuilt', 'Lattitude', 'Longtitude']
+
+Handled missing values:
+
+Filled some columns with zero
+
+Used Mean Imputation for numerical values (Landsize, BuildingArea)
+
+Dropped remaining missing values
+
+
+Encoded categorical features using LabelEncoder() for:
+
+['Suburb', 'Type', 'Method', 'SellerG', 'CouncilArea', 'Regionname']
+
+
+Split the dataset into training and testing sets using train_test_split()
+
+
+
+---
+
+📊 Models Applied
+
+We trained multiple machine learning models and evaluated their performance:
+
+🏆 Best Model: Random Forest Regressor
+
+Train Accuracy: 0.97
+
+Test Accuracy: 0.74
+
+Why is it the best?
+
+It achieved the highest R² score compared to other models.
+
+Good generalization between training and testing datasets.
+
+
+
+
+---
+
+🚀 How to Run the Project
+
+1️⃣ Clone the repository:
+
+git clone https://github.com/yourusername/home-price-prediction.git
+
+2️⃣ Navigate to the project directory:
+
+cd home-price-prediction
+
+3️⃣ Install dependencies:
+
+pip install -r requirements.txt
+
+4️⃣ Run the Jupyter Notebook:
+
+jupyter notebook
+
+5️⃣ Open Home Price Prediction.ipynb and execute the code.
+
+
+
+
+
+
+📢 Conclusion
+
+The Random Forest Regressor outperformed other models with an R² score of 0.772.
+
+The model generalizes well, achieving 97% accuracy on training data and 74% on test data.
+
+Further improvements can be made using hyperparameter tuning and feature selection.
+
+
